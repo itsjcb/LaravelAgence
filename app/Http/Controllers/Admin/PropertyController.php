@@ -14,7 +14,7 @@ class PropertyController extends Controller
     public function index()
     {
         //organiser decroissant paginer 25/25
-        return view('adminproperties.index', [
+        return view('admin.properties.index', [
             'properties' => Property::orderBy('created_at', 'desc')->paginate(25)
         ]);
     }
