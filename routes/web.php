@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//prefixer par admin avec nom par defaut prefixer par admin.
+Route::prefix('admin')->name('admin.')->group(function(){
+    // definir l'ensemble avec la function
+    Route::resource('property', \App\Http\Controllers\Admin\PropertyController::class);
+
+});
