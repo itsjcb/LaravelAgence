@@ -1,6 +1,7 @@
 @extends('admin.admin')
 
 @section('content')
+
     <h1>Les Biens</h1>
     <table class="table table-striped">
         <thead>
@@ -27,4 +28,5 @@
     </table>
 
     {{ $properties->links() }}
+
 @endsection
