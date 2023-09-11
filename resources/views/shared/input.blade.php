@@ -4,6 +4,7 @@ $class ??= null;
 $name ??= '';
 $value ??= '';
 $label ??= ucfirst($name);
+
 @endphp
 
 <div @class(["form-group", $class])>
